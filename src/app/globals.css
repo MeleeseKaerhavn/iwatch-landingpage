@@ -86,7 +86,36 @@ body {
 .left { grid-area: left; align-self: center; }
 
 .section_inner{
+  padding-left: 2rem;
   
+  h1{
+    font-size: 4rem;
+    text-wrap: nowrap;
+
+    margin-bottom: 1px;
+    color: white;
+    letter-spacing: 2px;
+  }
+  h3{
+    margin-top: 0;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+
+  button{
+    background-color:#BAD0DD;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border: 3px solid white;
+    border-radius: 99px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
 }
 
 
