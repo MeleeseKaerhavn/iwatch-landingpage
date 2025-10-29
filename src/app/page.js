@@ -11,8 +11,8 @@ export default function Home() {
      <header className="nav"> <NavBar/> </header>
      <section className="left"><HeroText /></section>
        <aside className="right"><HeroImage /></aside>
-      {/* {<aside className="dots"><ColorDots /></aside> 
-      <section className="variants"><VariantStrip /></section>  */}
+       <aside className="dots"><ColorDots /></aside> 
+      {/* <section className="variants"><VariantStrip /></section>   */}
     </main>
   );
 }
