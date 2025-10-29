@@ -1,0 +1,97 @@
+/* @import "tailwindcss"; */
+/* 
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+   background: #E5E5E5;
+  /* color: var(--foreground);  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.page-grid{
+   display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "left left left left left left right right right right dots dots"
+    "variants variants variants variants variants variants variants variants variants variants variants variants";
+  gap: 24px;
+  min-height: 100vh;
+  padding: 24px;
+  background: #BAD0DD;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 24px auto;
+}
+
+/************************* header******************** */
+
+.nav{
+  
+  grid-area: nav;
+  width: 100%;
+
+}
+
+.nav_inner{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.nav_flex{
+  display: flex;
+  gap: 2rem;
+
+  li{
+    list-style-type: none;
+    color: white;
+  }
+
+  li:nth-of-type(3){
+    background-color: white;
+    color:#BAD0DD;
+    padding: 0.3rem 1rem;
+    border-radius: 99px;
+  }
+
+}
+
+.nav_icons{
+  display: flex;
+  gap: 2rem;
+}
+
+/* ***************Hero Text*********************** */
+
+.left { grid-area: left; align-self: center; }
+
+.section_inner{
+  
+}
+
+
+
+ 
+/* .right { grid-area: right; align-self: center; justify-self: end; }
+.dots { grid-area: dots; align-self: center; justify-self: start; }
+.variants { grid-area: variants; align-self: end; } */
