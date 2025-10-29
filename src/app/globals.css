@@ -118,9 +118,26 @@ body {
   }
 }
 
-
+/* *******************i Watch image********************** */
 
  
-/* .right { grid-area: right; align-self: center; justify-self: end; }
-.dots { grid-area: dots; align-self: center; justify-self: start; }
+.right { grid-area: right; align-self: center; justify-self: end; }
+
+.hero_img{
+  width: 100%;
+  max-width: 400px;
+  transform: translateX(100px);
+}
+
+/* ******************* Color Dots and Variant Strip********************** */
+
+
+
+
+
+
+
+
+
+/* .dots { grid-area: dots; align-self: center; justify-self: start; } 
 .variants { grid-area: variants; align-self: end; } */

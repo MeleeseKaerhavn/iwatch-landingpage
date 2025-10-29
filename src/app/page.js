@@ -10,8 +10,8 @@ export default function Home() {
     <main className="page-grid">
      <header className="nav"> <NavBar/> </header>
      <section className="left"><HeroText /></section>
-      {/* <aside className="right"><HeroImage /></aside>
-      <aside className="dots"><ColorDots /></aside>
+       <aside className="right"><HeroImage /></aside>
+      {/* {<aside className="dots"><ColorDots /></aside> 
       <section className="variants"><VariantStrip /></section>  */}
     </main>
   );
