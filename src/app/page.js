@@ -12,7 +12,7 @@ export default function Home() {
      <section className="left"><HeroText /></section>
        <aside className="right"><HeroImage /></aside>
        <aside className="dots"><ColorDots /></aside> 
-      {/* <section className="variants"><VariantStrip /></section>   */}
+       <section className="variants"><VariantStrip /></section> 
     </main>
   );
 }

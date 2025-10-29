@@ -135,7 +135,7 @@ body {
 
 .dots_inner{
    display: flex;
-  flex-direction: column;   /* vertical stack */
+  flex-direction: column;  
   gap: 2rem;
   align-items: center;
   margin-right: 2rem;
@@ -154,13 +154,43 @@ body {
 }
 
 
-/* custom colors */
-.dot.navy { background-color: #2d324d; }
-.dot.mint { background-color: #6de0c1; }
-.dot.ocean { background-color: #D1E0E7; }
+
+.variants { grid-area: variants; align-self: end; }
+
+.variant_flex{
+  display:flex;
+  gap:1.75rem;
+  justify-content:end; 
+  padding-bottom:1rem;
+}
+
+.variant{
+  position:relative;
+   width: 140px;       
+  height: 95px;             
+}
+
+.preview{
+  position:relative;
+  z-index: 2;
+  display:block;
+  width: 125px;      
+  height:auto;
+  margin: 0 auto;
+  transform: translateY(-22%); 
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,.12));
+}
+
+.pill{
+  position:absolute;
+  left:0; right:0; bottom:0;
+ height: 60px;     
+  border-radius: 10px;
+  z-index: 1;
+  background: #ddd;
+}
 
 
-
-
-
-/* .variants { grid-area: variants; align-self: end; } */
+.navy { background-color: #2d324d; }
+.mint { background-color: #6de0c1; }
+.ocean { background-color: #D1E0E7; }
