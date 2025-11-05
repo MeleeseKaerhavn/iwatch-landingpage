@@ -1,4 +1,4 @@
-/* @import "tailwindcss"; */
+@import "tailwindcss";
 /* 
 :root {
   --background: #ffffff;
@@ -27,85 +27,85 @@ body {
 
 
 .page-grid{
-   display: grid;
+   /* display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto; */
   grid-template-areas:
     "nav nav nav nav nav nav nav nav nav nav nav nav"
     "left left left left left left right right right right right dots"
     "variants variants variants variants variants variants variants variants variants variants variants variants";
-  gap: 24px;
+  /* gap: 24px;
   min-height: 100vh;
   padding: 24px;
   background: #BAD0DD;
   border-radius: 20px;
   max-width: 1200px;
-  margin: 24px auto;
+  margin: 24px auto; */
 }
 
 /************************* header******************** */
 
 .nav{
   
-  grid-area: nav;
+  grid-area: nav;   /* Er der grid-area i tailwind? */
   width: 100%;
 
 }
 
-.nav_inner{
+/* .nav_inner{
   display: flex;
   justify-content: space-between;
   align-items:center;
-}
+} */
 
-.nav_flex{
-  display: flex;
-  gap: 2rem;
+/* .nav_flex{ */
+  /* display: flex;
+  gap: 2rem; */
 
-  li{
+  /* li{
     list-style-type: none;
     color: white;
-  }
+  } */
 
-  li:nth-of-type(3){
+  /* li:nth-of-type(3){
     background-color: white;
     color:#BAD0DD;
     padding: 0.3rem 1rem;
     border-radius: 99px;
-  }
+  } */
 
-}
+/* } */
 
-.nav_icons{
+/* .nav_icons{
   display: flex;
   gap: 2rem;
-}
+} */
 
 /* ***************Hero Text*********************** */
 
 .left { grid-area: left; align-self: center; }
 
-.section_inner{
-  padding-left: 2rem;
+/* .section_inner{ */
+  /* padding-left: 2rem; */
   
-  h1{
-    font-size: 4rem;
+  /* h1{ */
+    /* font-size: 4rem;
     text-wrap: nowrap;
 
     margin-bottom: 1px;
     color: white;
-    letter-spacing: 2px;
-  }
-  h3{
+    letter-spacing: 2px; */
+  /* } */
+  /* h3{
     margin-top: 0;
     font-size: 4rem;
     margin-bottom: 2rem;
     color: white;
     letter-spacing: 2px;
     font-weight: 100;
-  }
+  } */
 
-  button{
+  /* button{
     background-color:#BAD0DD;
     color: white;
     border: none;
@@ -115,61 +115,61 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     font-weight: bold;
-  }
-}
+  } */
+/* } */
 
 /* *******************i Watch image********************** */
 
  
 .right { grid-area: right; align-self: center; justify-self: flex-end; }
 
-.hero_img{
-  width: 100%;
-  max-width: 400px;
+/* .hero_img{ */
+  /* width: 100%; */
+  /* max-width: 400px; */
   /* transform: translateX(100px); */
-}
+/* } */
 
 /* ******************* Color Dots and Variant Strip********************** */
 
  .dots { grid-area: dots; align-self: center; justify-self: flex-end; } 
-
+/* 
 .dots_inner{
    display: flex;
   flex-direction: column;  
   gap: 2rem;
   align-items: center;
   margin-right: 2rem;
-}
+} */
 
-.dot {
+/* .dot {
   width: 16px;
   height: 16px;
   border-radius: 50%;
   border: 2px solid white;
   cursor: pointer;
-}
+} */
 
-.dot:hover{
+/* .dot:hover{
   transform: scale(150%);
-}
+} */
 
 
 
 .variants { grid-area: variants; align-self: end; }
 
-.variant_flex{
+/* .variant_flex{
   display:flex;
   gap:1.75rem;
   justify-content:end; 
   padding-bottom:1rem;
-}
+} */
 
-.variant{
+/* .variant{
   position:relative;
    width: 140px;       
   height: 95px;             
-}
-
+} */
+/* 
 .preview{
   position:relative;
   z-index: 2;
@@ -179,16 +179,16 @@ body {
   margin: 0 auto;
   transform: translateY(-22%); 
   filter: drop-shadow(0 8px 16px rgba(0,0,0,.12));
-}
+} */
 
-.pill{
+/* .pill{
   position:absolute;
   left:0; right:0; bottom:0;
  height: 60px;     
   border-radius: 10px;
   z-index: 1;
   background: #ddd;
-}
+} */
 
 
 .navy { background-color: #2d324d; }
